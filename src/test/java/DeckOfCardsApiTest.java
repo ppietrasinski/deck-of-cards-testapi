@@ -65,9 +65,10 @@ public class DeckOfCardsApiTest {
 
 
 //        Below, My futile attempts to get card with code 8C. response i get was some kind of
-//        weirdy objects (example in weird_response.txt) and I couldn't get or convert data from it
+//        weirdy objects (example in weird_response.txt) and I couldn't get or convert data from it. It was not like
+//        a json at all and I tried to get String from it. unfortunately, I was not able to do that.
 
-        //        ArrayList<String> codes = null;
+//        ArrayList<String> codes = null;
 //
 //        for (Object card : cards) {
 //            Arrays.asList(card);
@@ -75,12 +76,11 @@ public class DeckOfCardsApiTest {
 //                System.out.println(value.toString());
 //                String value1 = value.toString();
 //                codes.add(value1);
-////                codes.add(value.toString());
+//                codes.add(value.toString());
 //            }
 //        }
 
-        //        System.out.println(cards.get(1));
-////        assertThat(cards, hasItem("code=8C"));
+//        assertThat(cards, hasItem("code=8C"));
 //        assertThat(cards, Matchers.hasProperty("code=8C"));
 //        assertThat(cards, contains(
 //                hasToString("code=8C")
@@ -99,6 +99,7 @@ public class DeckOfCardsApiTest {
         );
     }
 
+//    Parametrized test to check if attribute has correct type
     @ParameterizedTest
     @MethodSource("createDataForAttributesValue")
     public void testDeckOfCardsAttributeValues(Class<Object> classType, String attributeName){
