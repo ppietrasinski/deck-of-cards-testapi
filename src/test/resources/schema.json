@@ -1,0 +1,24 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "success": {
+      "type": "boolean"
+    },
+    "deck_id": {
+      "type": "string"
+    },
+    "shuffled": {
+      "type": "boolean"
+    },
+    "remaining": {
+      "type": "integer"
+    }
+  },
+  "required": [
+    "success",
+    "deck_id",
+    "shuffled",
+    "remaining"
+  ]
+}
